@@ -17,3 +17,5 @@ Hacking an android phone using Java / Android Studio
     Finally, it displays a toast message indicating that the SMS has been sent.
 
 Please note that this code assumes that the necessary permissions (READ_CONTACTS, READ_CALL_LOG, and SEND_SMS) have been granted, and it is intended for educational purposes.
+
+# Only for Ethical hacking purpose, Do be careful with others data
